@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Be4U</title>
+  <link rel="icon" href="images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body style="font-family: 'Times New Roman';">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid"
+      style="background-color: aqua;height: 75px;font-size: 30px;border-radius: 50px;text-align: center;padding-left: 30px;">
+      <a class="navbar-brand" href="#" style="font-size: 30px;"><img src="images/logo.png" height="105px" width="105px"
+          alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+  <p style="font-size: 30px;height: auto; width: 100%; padding: 10px; text-align: justify;">
+    The next few questions describe some events and situations that occur frequently in students' lives. For example,
+    "breaking of friendships," "passing an exam' etc. Read each statement carefully. You have to tell the degree of
+    stress you experienced during that event. Indicate this by putting a tick (4) in the column next to the statement.
+    Against each statement, rate the degree of stress by putting a tick mark (✔). There is no time limit to complete the
+    scale, but do not waste your time. Your responses will be kept strictly confidential.
+  </p>
+  <br>
+  <center>
+    <h1><b>Demographics</b></h1>
+  </center>
+
+
+  <center>
+    <form action="" method="post" style="font-size: 20px;height: auto;width: 100%;">
+      <table>
+        <tr>
+          <th>
+            Age:
+          </th>
+          <td>
+            <input type="number" name="Age" required
+              style="border: solid red; border-radius: 20px;padding-left: 15px;width: 150px; margin-top: 4px;">
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Gender:
+          </th>
+          <td style="padding-left: 10px;">
+            <input type="radio" name="Gender" id="g1" value="Male">Male
+            <input type="radio" name="Gender" id="g2" value="Female">Female
+            <input type="radio" name="Gender" id="g3" value="Non-Binary">Non-Binary
+            <input type="radio" name="Gender" id="g4" value="Not Prefer to Say">Not Prefer to Say
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Last Exam Marks (%)
+          </th>
+          <td>
+
+            <input type="number" name="Marks" required
+              style="border: solid red; border-radius: 20px;padding-left: 15px;width: 150px; margin-top: 4px;">
+
+          </td>
+        </tr>
+        <tr>
+          <th>
+            District
+          </th>
+          <td>
+            <input type="text" name="District" placeholder="District" required style="border: solid red; border-radius: 20px;padding-left: 15px;margin-top: 4px;">
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            State
+          </th>
+          <td>
+            <input type="text" name="State" placeholder="State" required style="border: solid red; border-radius: 20px;padding-left: 15px;margin-top: 4px;">
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Country:
+          </th>
+          <td>
+            <input type="text" name="Country" placeholder="Country" id="" required style="border: solid red; border-radius: 20px;padding-left: 15px;margin-top: 4px;margin-bottom: 4px;">
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Date of Birth
+          </th>
+          <td>
+            <input type="date" name="DOB" required>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Course you are enrolled in:
+          </th>
+          <td>
+            <input type="text" name="Course" placeholder="Course Name" style="border: solid red; border-radius: 20px;padding-left: 15px;margin-top: 4px;margin-bottom: 4px;">
+          </td>
+        </tr>
+        <tr>
+          <th>
+            12th Class Subject Stream
+          </th>
+          <td>
+            <select name="12th_Stream" id="">
+              <option value="select">---Select---</option>
+              <option value="Science">Science</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Arts/Humanity">Arts/Humanity</option>
+              <option value="Vocational">Vocational</option>
+              <option value="Other">Other</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Mother's Education
+          </th>
+          <td>
+            <select name="Mother_Education" id="">
+              <option value="select">---Select---</option>
+              <option value="No formal education">No formal education </option>
+              <option value="Primary">Primary </option>
+              <option value="Secondary">Secondary </option>
+              <option value="Higher Secondary">Higher Secondary </option>
+              <option value="Graduate">Graduate </option>
+              <option value="Post-Graduate">Post-Graduate</option>
+              <option value="Doctorate">Doctorate</option>
+              <option value="Other">Other</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Father's Education
+          </th>
+          <td>
+            <select name="Father_Education" id="">
+              <option value="select">---Select---</option>
+              <option value="No formal education">No formal education </option>
+              <option value="Primary">Primary </option>
+              <option value="Secondary">Secondary </option>
+              <option value="Higher Secondary">Higher Secondary </option>
+              <option value="Graduate">Graduate </option>
+              <option value="Post-Graduate">Post-Graduate</option>
+              <option value="Doctorate">Doctorate</option>
+              <option value="Other">Other</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Family Income Annually:
+          </th>
+          <td>
+            <select name="Family_Income" id="">
+              <option value="select">---Select---</option>
+              <option value="Below ₹1,20,000 ">Below ₹1,20,000 </option>
+              <option value="₹1,20,000 - ₹3,00,000 ">₹1,20,000 - ₹3,00,000 </option>
+              <option value="₹3,00,001 - ₹6,00,000 ">₹3,00,001 - ₹6,00,000 </option>
+              <option value="₹6,00,001 - ₹12,00,000">₹6,00,001 - ₹12,00,000</option>
+              <option value="Above ₹12,00,000">Above ₹12,00,000</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            Accommodation Type:
+          </th>
+          <td>
+            <select name="Accommodation" id="">
+              <option value="select">---Select---</option>
+              <option value="Hostel">Hostel</option>
+              <option value="Localite (with family)">Localite (with family)</option>
+              <option value="PG (Paying Guest)">PG (Paying Guest)</option>
+              <option value="Staying with relatives">Staying with relatives</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Category:
+          </th>
+          <td>
+            <select name="Category" id="">
+              <option value="select">---Select--</option>
+              <option value="General">General</option>
+              <option value="OBC">OBC</option>
+              <option value="SC">SC</option>
+              <option value="ST">ST</option>
+              <option value="NRI">NRI</option>
+              <option value="Foreign National">Foreign National</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br><br>
+
+
+      <h1><b>Lifestyle & Personality Preferences</b></h1>
+
+      <table>
+        <tr>
+          <th>
+            Are You a Morning Bird or Night Owl?
+          </th>
+          <td>
+            <select name="Are You a Morning Bird or Night Owl?" id="">
+              <option value="select">---Select--</option>
+              <option value="I rise with the sun  ">I rise with the sun </option>
+              <option value="I'm alive after midnight ">I'm alive after midnight </option>
+              <option value="Depends on exams ">Depends on exams </option>
+              <option value="I don’t even know anymore">I don’t even know anymore</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>What’s Your Vibe on Sexual Orientation?</th>
+          <td>
+            <select name="What’s Your Vibe on Sexual Orientation?" id="">
+              <option value="select">---Select--</option>
+              <option value="It’s fluid and personal "> It’s fluid and personal </option>
+              <option value="Everyone should be free to love ">Everyone should be free to love </option>
+              <option value="I don’t really think about it">I don’t really think about it</option>
+              <option value="I’m learning and open-minded">I’m learning and open-minded</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Your Take on Parties?:
+          </th>
+          <td>
+            <select name="Your Take on Parties?" id="">
+              <option value="select">---Select---</option>
+              <option value="Love them! I’m the life of the party ">Love them! I’m the life of the party </option>
+              <option value="Only if close friends are there ">Only if close friends are there </option>
+              <option value="Meh. I prefer chill hangouts">Meh. I prefer chill hangouts</option>
+              <option value="No parties please, I like my peace">No parties please, I like my peace</option>
+              <option value="I like hosting more than attending">I like hosting more than attending</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            Beach or Mountain?:
+          </th>
+          <td>
+            <select name="Beach or Mountain?:" id="">
+              <option value="select">---Select---</option>
+              <option value="Beach baby ">Beach baby </option>
+              <option value="Mountain soul ">Mountain soul </option>
+              <option value="Anywhere with Wi-Fi ">Anywhere with Wi-Fi </option>
+              <option value="I love both equally ">I love both equally </option>
+              <option value="Neither — give me a cityscape! ">Neither — give me a cityscape! </option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <br><br><br>
+
+      <h1><b>Statements</b></h1>
+
+      <br>
+      <table style="width: 750px;">
+        <tr>
+          <td>
+            Theft of wealth and property
+          </td>
+          <td>
+            <select name="Theft of wealth and property " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Theft or loss of a personally valuable possessionTheft or loss of a personally valuable possession</td>
+          <td>
+            <select name="Theft or loss of a personally valuable possession" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            A major financial trouble arose
+          </td>
+          <td>
+            <select name="A major financial trouble arose" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Family income decreased heavily
+          </td>
+          <td>
+            <select name="Family income decreased heavily " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Relations with some family member got strained</td>
+          <td>
+            <select name="Relations with some family member got strained" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Family member interfered in personal matters  </td>
+          <td>
+            <select name="Family member interfered in personal matters  " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Family environment got tense</td>
+          <td>
+            <select name="Family environment got tense" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Parents favored siblings  </td>
+          <td>
+            <select name="Parents favored siblings  " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>A serious difference arose with a friend and neighbor</td>
+          <td>
+            <select name="A serious difference arose with a friend and neighbor" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Relations with an authority (hostel warden, teacher etc) deteriorated </td>
+          <td>
+            <select name="Relations with an authority (hostel warden, teacher etc) deteriorated " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Relations with girl/boy friend got strained </td>
+          <td>
+            <select name="Relations with girl/boy friend got strained " id="">
+               <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Parents did not trust me on certain occasions </td>
+          <td>
+            <select name="Parents did not trust me on certain occasions " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>People behaved indifferently towards me </td>
+          <td>
+            <select name="People behaved indifferently towards me " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>People misunderstood me </td>
+          <td>
+            <select name="People misunderstood me " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Compared to others, I found myself inferior </td>
+          <td>
+            <select name="Compared to others, I found myself inferior " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Physical beauty diminished </td>
+          <td>
+            <select name="Physical beauty diminished " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Aspirations of my life remained unfulfilled</td>
+          <td>
+            <select name="Aspirations of my life remained unfulfilled" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>I was not honoured for the commendable work I did </td>
+          <td>
+            <select name="I was not honoured for the commendable work I did " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>I was blamed for no fault of mine</td>
+          <td>
+            <select name="I was blamed for no fault of mine" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Parents scolded or beat </td>
+          <td>
+            <select name="Parents scolded or beat " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Teacher Scolded</td>
+          <td>
+            <select name="Teacher Scolded" id="">
+               <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>My family was dishonoured </td>
+          <td>
+            <select name="My family was dishonoured " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Passed exam with poor marks </td>
+          <td>
+            <select name="Passed exam with poor marks " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Failed in examination </td>
+          <td>
+            <select name="Failed in examination " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Disciplinary action was taken action against me</td>
+          <td>
+            <select name="Disciplinary action was taken action against me" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>A Family member was jailed</td>
+          <td>
+            <select name="A Family member was jailed" id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Apprehended for a simple breach of law </td>
+          <td>
+            <select name="Apprehended for a simple breach of law " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>A close friend died </td>
+          <td>
+            <select name="A close friend died " id="">
+               <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            A close family member died 
+          </td>
+          <td>
+            <select name="A close family member died " id="">
+              <option value="select">---Select--</option>
+              <option value="1">No Stress</option>
+              <option value="2">Very Little Stress</option>
+              <option value="3">Somewhat Stress</option>
+              <option value="4">Average Stress</option>
+              <option value="5">Much Stress</option>
+              <option value="6">Too Much Stress</option>
+              <option value="7">Unbearable stress </option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <input type="submit">
+      <input type="reset">
+    </form>
+  </center>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
